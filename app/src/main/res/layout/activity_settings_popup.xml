@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    tools:context=".SettingsPopupActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="705dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/Dice"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/light_grey"
+            android:fontFamily="@font/metal_mania"
+            android:minWidth="235dp"
+            android:onClick="saveGame"
+            android:text="SAUVEGARDER"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/BlackBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/light_grey"
+            android:fontFamily="@font/metal_mania"
+            android:minWidth="235dp"
+            android:onClick="tuto"
+            android:text="TUTORIEL"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/ObjectBank"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/light_grey"
+            android:fontFamily="@font/metal_mania"
+            android:minWidth="235dp"
+            android:onClick="backMenu"
+            android:text="RETOUR AU MENU"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:onClick="close"
+            android:text="X"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

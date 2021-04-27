@@ -1,0 +1,37 @@
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ToolbarActivity"
+    android:id="@+id/toolbar"
+    android:background="@color/toolbar"
+    android:titleTextColor="@color/white"
+    tools:targetApi="lollipop">
+
+    <ImageButton
+        android:id="@+id/menuBurger"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:background="@drawable/menu"
+        android:onClick="dialogMenuBurger"
+        android:contentDescription="TODO"/>
+
+    <TextView
+        android:layout_width="285dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/metal_mania"
+        android:gravity="center"
+        android:text="Zenyth"
+        android:textColor="@color/white"
+        android:textSize="32dp" />
+
+    <ImageButton
+        android:id="@+id/parameters"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:onClick="dialogSettings"
+        android:background="@drawable/settings" />
+
+
+</Toolbar>

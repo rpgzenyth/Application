@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_black"
+    android:orientation="vertical"
+    tools:context=".Onglet1Activity"><include layout="@layout/activity_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:text="Dés de vie"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Dés de vie :"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="5" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Jds contre la mort :"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="?" />
+            </TableRow>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/gris"
+                android:textSize="20dp"
+                android:text="_______________________________________"/>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:text="Compétences"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Acrobaties (DEX) :"/>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+4" />
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Arcanes (INT) :"/>
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Athlétisme (FOR) :"/>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="-1"/>
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:text="   Discrétion (DEX) :"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+4"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Dressage (SAG) :"/>
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+3" />
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Escamotage (DEX) :"/>
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+4"/>
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Histoire (INT) :"/>
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Intimidation (CHA) :"/>
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Investigaton (INT) :"/>
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Médecin (SAG) :"/>
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+6"/>
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Nature (INT) :"/>
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+4"/>
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Perception (SAG) :"/>
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+3"/>
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Persuation (CHA) :"/>
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Religion (INT) :"/>
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+4"/>
+                <CheckBox
+                    android:id="@+id/checkBox13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Representation (CHA) :"/>
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Survie (SAG) :"/>
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+6"/>
+                <CheckBox
+                    android:id="@+id/checkBox15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Tromperie (CHA) :"/>
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/gris"
+                android:textSize="20dp"
+                android:text="_______________________________________"/>
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="245dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:text="Jets de sauvegarde"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Force :"/>
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="-1"/>
+                <CheckBox
+                    android:id="@+id/checkBox17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Dextérité :"/>
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+4"/>
+                <CheckBox
+                    android:id="@+id/checkBox18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Constitution :"/>
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Intellignece :"/>
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Sagesse :"/>
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+3"/>
+                <CheckBox
+                    android:id="@+id/checkBox21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:textColor="@color/gris"
+                    android:textSize="20dp"
+                    android:text="   Charisme :"/>
+
+                <TextView
+                    android:id="@+id/textVie66"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="+1"/>
+                <CheckBox
+                    android:id="@+id/checkBox22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
